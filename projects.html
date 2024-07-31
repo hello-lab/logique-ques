@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-full" >
+
+  
+    <nav class="bg-white sticky shadow-lg" style="
+   
+    box-shadow: 0px 4px 20px 1px black;
+">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold">Harvest Hope Initiatives </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href='home1.html' class="text-gray-800 hover:text-blue-500">Home</a>
+                    <a href=projects.html class="text-gray-800 hover:text-blue-500">Projects</a>
+                    <a href='resources.html' class="text-gray-800 hover:text-blue-500">Resources</a>
+                    <a href='getinvolved.html' class="text-gray-800 hover:text-blue-500">Get Involved</a>
+                </div>
+               
+            </div>
+            <hr class="md:hidden">
+            <div class=" flex justify-content md:hidden space-x-4">
+                <a href='home1.html' class="text-gray-800 hover:text-blue-500">Home</a>
+                <a href='projects.html' class="text-gray-800 hover:text-blue-500">Projects</a>
+                <a href='resources.html' class="text-gray-800 hover:text-blue-500">Resources</a>
+                <a href='getinvolved.html' class="text-gray-800 hover:text-blue-500">Get Involved</a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    
+    <main>
+        
+        <section class="projects-grid">
+    
+            <div class="project-item completed" onclick="('seed-bank.html')" data-date="2024-01-15">
+                <img src="seed-bank.jpg" alt="Seed Bank">
+                <h3>Seed Bank</h3>
+                <p>Our Seed Bank project collects and stores seeds to ensure sustainable agriculture and biodiversity.</p>
+                <span class="impact">People Helped: 6000</span>
+                <span class="date">Start Date: January 2024</span>
+            </div>
+            <div class="project-item ongoing" onclick="('food-relief.html')"  data-date="2024-04-20">
+                <img src="food-relief.jpg" alt="Food Relief">
+                <h3>Food Relief</h3>
+                <p>Provides emergency food assistance to communities affected by crises and disasters.</p>
+                <span class="impact">People Helped: 8000</span>
+                <span class="date">Start Date: April 2024</span>
+            </div>
+            
+            <div class="project-item ongoing" onclick="('food-recovery-network.html')" data-date="2024-02-25">
+                <img src="food-recovery-network.jpg" alt="Food Recovery Network">
+                <h3>Food Recovery Network</h3>
+                <p>Creates partnerships to recover surplus food and redistribute it to those in need.</p>
+                <span class="impact">People Helped: 7000</span>
+                <span class="date">Start Date: February 2024</span>
+            </div>
+            <div class="project-item completed" onclick="('school-lunch.html')" data-date="2023-11-10">
+                <img src="school-lunch.jpg" alt="School Lunch">
+                <h3>School Lunch</h3>
+                <p>Offers nutritious meals to children in schools to support their education and health.</p>
+                <span class="impact">People Helped: 3500</span>
+                <span class="date">Start Date: November 2023</span>
+            </div>
+            <div class="project-item completed" onclick="('food-waste-reduction.html')" data-date="2023-09-05">
+                <img src="food-waste-reduction.jpg" alt="Food Waste Reduction">
+                <h3>Food Waste Reduction</h3>
+                <p>Aims to minimize food waste through education and waste diversion programs.</p>
+                <span class="impact">People Helped: 4000</span>
+                <span class="date">Start Date: September 2023</span>
+            </div>
+            <div class="project-item ongoing" onclick="('community-garden.html')" data-date="2024-06-01">
+                <img src="community-garden.jpg" alt="Community Garden">
+                <h3>Community Garden</h3>
+                <p>This project focuses on creating community gardens to foster local food production and green spaces.</p>
+                <span class="impact">People Helped: 5000</span>
+                <span class="date">Start Date: June 2024</span>
+            </div>
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+

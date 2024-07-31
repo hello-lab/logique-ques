@@ -1,0 +1,231 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e8f5e9;
+}
+
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Project Details Page Styles */
+.project-details {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-header h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.project-content h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #004d00;
+}
+
+.project-content p {
+    line-height: 1.6;
+}
+
+.project-content ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.project-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #004d00;
+    background-color: white;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+footer {
+    background-color: #004d00;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Animation for scrolling elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0; /* Start as invisible */
+    transform: translateY(20px); /* Start with a slight offset */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When the element is in view */
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #004d00; /* Dark green background */
+    color: #fff;               /* White text color */
+    padding: 1rem;            /* Padding around the header */
+    text-align: center;       /* Center align text in header */
+}
+
+nav ul {
+    list-style: none;         /* Remove bullet points */
+    padding: 0;               /* Remove default padding */
+    margin: 0;                /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;          /* Display list items inline */
+    margin: 0 10px;           /* Horizontal margin between items */
+}
+
+nav ul li a {
+    color: #fff;              /* White text color for links */
+    text-decoration: none;    /* Remove underline from links */
+    font-weight: bold;        /* Make text bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+main {
+    padding: 2rem;            /* Padding around main content */
+    background-color: #fff;   /* White background for main content */
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-item {
+    background-color: white; /* Light green background for projects */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #004d00; /* Green border below image */
+}
+
+.project-item:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.project-item h3 {
+    font-size: 1.25rem;
+    margin: 1rem;
+    text-align: center;
+    color: #004d00;
+}
+
+.project-item p {
+    margin: 0 1rem 1rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 576px) {
+    .project-item {
+        flex: 1 1 calc(50% - 1rem); /* Two items per row on small devices */
+    }
+}
+
+@media (min-width: 992px) {
+    .project-item {
+        flex: 1 1 calc(33.333% - 1rem); /* Three items per row on medium devices */
+    }
+}
